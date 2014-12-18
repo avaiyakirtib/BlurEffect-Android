@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.npi.blureffect.TopCenterImageView
+        android:id="@+id/normal_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.npi.blureffect.TopCenterImageView
+        android:id="@+id/blurred_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0" />
+
+   
+    <RelativeLayout
+        android:id="@+id/Rel_lay"
+        android:layout_width="match_parent"
+        android:layout_height="500dp" >
+
+        <com.npi.blureffect.ScrollableImageView
+            android:id="@+id/blurred_image_header"
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
+     
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Rel_lay"
+        android:id="@+id/btn_pick_img"
+        android:text="Pick Images" />
+
+</RelativeLayout>
